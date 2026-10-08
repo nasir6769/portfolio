@@ -3,255 +3,511 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Nasir's personal portfolio website showcasing his skills, projects, education and experience.">
+    <title>Nasir Yousuf | Software Developer</title>
 
-    <title>Nasir | Full Stack Developer</title>
+    <meta name="description"
+        content="Nasir Yousuf - Computer Science Engineering student and software developer.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            background: #fff;
+            line-height: 1.45;
+            font-size: 14px;
+        }
+
+        .resume {
+            width: 850px;
+            max-width: 95%;
+            margin: 30px auto;
+            padding: 35px 45px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        header h2 {
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 8px;
+            color: #444;
+        }
+
+        .contact {
+            font-size: 13px;
+        }
+
+        .contact a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        section {
+            margin-top: 17px;
+        }
+
+        section > h2 {
+            font-size: 15px;
+            text-transform: uppercase;
+            border-bottom: 1.5px solid #222;
+            padding-bottom: 3px;
+            margin-bottom: 9px;
+            letter-spacing: 0.8px;
+        }
+
+        .summary {
+            text-align: justify;
+        }
+
+        .education-header,
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .education-header h3,
+        .project-header h3 {
+            font-size: 14px;
+        }
+
+        .date {
+            font-size: 13px;
+            color: #444;
+        }
+
+        .institution {
+            font-weight: bold;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .skills p {
+            margin-bottom: 5px;
+        }
+
+        .skills strong {
+            display: inline-block;
+            width: 150px;
+        }
+
+        .project {
+            margin-bottom: 12px;
+        }
+
+        .project-header a {
+            color: #222;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .project-tech {
+            margin-top: 3px;
+            font-size: 13px;
+        }
+
+        .project-tech strong {
+            font-weight: bold;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        @media print {
+            body {
+                font-size: 12px;
+            }
+
+            .resume {
+                width: 100%;
+                max-width: none;
+                margin: 0;
+                padding: 20px 30px;
+            }
+
+            section {
+                margin-top: 12px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .resume {
+                padding: 20px;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+
+            .education-header,
+            .project-header {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <div class="resume">
 
-    <header>
+        <!-- ================= HEADER ================= -->
 
-        <nav>
+        <header>
 
-            <a href="#home">Nasir</a>
+            <h1>NASIR Ahmad Sadi</h1>
 
-            <div>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
+            <h2>Computer Science Engineering Student | Software Developer</h2>
+
+            <div class="contact">
+                Bengaluru, India |
+                <a href="mailto:nsyousuf629@gmail.com">
+                    nsyousuf629@gmail.com
+                </a>
+                |
+                <a href="https://github.com/nasir6769" target="_blank">
+                    GitHub
+                </a>
+                |
+                <a href="https://linkedin.com/" target="_blank">
+                    LinkedIn
+                </a>
             </div>
 
-        </nav>
-
-    </header>
+        </header>
 
 
-    <main>
+        <!-- ================= SUMMARY ================= -->
 
-        <!-- ================= HERO ================= -->
+        <section>
 
-        <section id="home">
+            <h2>Professional Summary</h2>
 
-            <p>Hello, I'm</p>
-
-            <h1>Nasir</h1>
-
-            <h2>Computer Science Student & Aspiring Full Stack Developer</h2>
-
-            <p>
-                I build web applications and enjoy turning ideas into
-                real-world software.
+            <p class="summary">
+                Computer Science Engineering student with hands-on experience
+                building web applications using React, JavaScript, Python,
+                FastAPI and PostgreSQL. Strong foundation in data structures
+                and algorithms with practical experience developing
+                authentication, REST APIs, database-driven applications and
+                responsive frontend interfaces. Interested in software
+                engineering and full-stack development opportunities.
             </p>
-
-            <a href="#projects">View My Projects</a>
-
-            <a href="#contact">Contact Me</a>
-
-        </section>
-
-
-        <!-- ================= ABOUT ================= -->
-
-        <section id="about">
-
-            <h2>About Me</h2>
-
-            <p>
-                I'm a Computer Science Engineering student interested in
-                software development, web technologies and building
-                useful applications.
-            </p>
-
-            <p>
-                I'm currently developing my skills in frontend development,
-                backend development, databases and data structures.
-            </p>
-
-        </section>
-
-
-        <!-- ================= SKILLS ================= -->
-
-        <section id="skills">
-
-            <h2>Skills</h2>
-
-            <h3>Frontend</h3>
-
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li></li>
-            </ul>
-
-
-            <h3>Backend</h3>
-
-            <ul>
-                <li>Python</li>
-                <li>FastAPI</li>
-                <li>REST APIs</li>
-            </ul>
-
-
-            <h3>Database</h3>
-
-            <ul>
-                <li>PostgreSQL</li>
-                <li>MySQL</li>
-                <li>SQL</li>
-            </ul>
-
-
-            <h3>Programming & Tools</h3>
-
-            <ul>
-                <li>C++</li>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>VS Code</li>
-            </ul>
-
-        </section>
-
-
-        <!-- ================= PROJECTS ================= -->
-
-        <section id="projects">
-
-            <h2>Projects</h2>
-
-
-            <article>
-
-                <h3>Event Management System</h3>
-
-                <p>
-                    A full-stack event management application that allows
-                    users and organizers to manage events, authentication,
-                    bookings and other event-related features.
-                </p>
-
-                <p>
-                    <strong>Technologies:</strong>
-                    FastAPI, PostgreSQL, JavaScript
-                </p>
-
-                <a href="#" target="_blank">GitHub</a>
-
-            </article>
-
-
-
-            <article>
-
-                <h3>Myntra Clone</h3>
-
-                <p>
-                    A frontend project inspired by an e-commerce platform,
-                    built to practice modern web development concepts.
-                </p>
-
-                <p>
-                    <strong>Technologies:</strong>
-                    HTML, CSS, JavaScript, React
-                </p>
-
-                <a href="#" target="_blank">GitHub</a>
-
-            </article>
 
         </section>
 
 
         <!-- ================= EDUCATION ================= -->
 
-        <section id="education">
+        <section>
 
             <h2>Education</h2>
 
-            <article>
+            <div class="education-header">
 
-                <h3>Bachelor of Engineering / Technology</h3>
+                <h3>
+                    Bachelor of Engineering / Technology —
+                    Computer Science Engineering
+                </h3>
 
-                <p>Computer Science Engineering</p>
+                <span class="date">
+                    2024 – Present
+                </span>
 
-                <p>
-                    Currently pursuing my undergraduate degree.
+            </div>
+
+            <p class="institution">
+                Undergraduate Student
+            </p>
+
+            <p>
+                Currently pursuing a degree in Computer Science Engineering.
+            </p>
+
+        </section>
+
+
+        <!-- ================= TECHNICAL SKILLS ================= -->
+
+        <section class="skills">
+
+            <h2>Technical Skills</h2>
+
+            <p>
+                <strong>Languages:</strong>
+                C++, Python, JavaScript, SQL, HTML, CSS
+            </p>
+
+            <p>
+                <strong>Frontend:</strong>
+                React.js, React Router, Axios, Responsive UI
+            </p>
+
+            <p>
+                <strong>Backend:</strong>
+                FastAPI, REST APIs, JWT Authentication
+            </p>
+
+            <p>
+                <strong>Databases:</strong>
+                PostgreSQL, MySQL
+            </p>
+
+            <p>
+                <strong>Developer Tools:</strong>
+                Git, GitHub, VS Code, Postman
+            </p>
+
+            <p>
+                <strong>Core Concepts:</strong>
+                Data Structures & Algorithms, OOP, DBMS, API Development
+            </p>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section>
+
+            <h2>Projects</h2>
+
+
+            <!-- EVENT MANAGEMENT -->
+
+            <div class="project">
+
+                <div class="project-header">
+
+                    <h3>Event Management System</h3>
+
+                    <a href="https://github.com/nasir6769" target="_blank">
+                        GitHub
+                    </a>
+
+                </div>
+
+                <p class="project-tech">
+                    <strong>Tech:</strong>
+                    Python, FastAPI, PostgreSQL, JWT, REST APIs
                 </p>
 
-            </article>
+                <ul>
+
+                    <li>
+                        Developed a backend-driven event management
+                        application supporting user and organizer workflows.
+                    </li>
+
+                    <li>
+                        Implemented JWT-based authentication and
+                        role-based authorization for protected operations.
+                    </li>
+
+                    <li>
+                        Built CRUD APIs for event creation, updating,
+                        deletion and retrieval using FastAPI and PostgreSQL.
+                    </li>
+
+                    <li>
+                        Designed relational database structures and used
+                        parameterized SQL queries for database operations.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- NEXORA -->
+
+            <div class="project">
+
+                <div class="project-header">
+
+                    <h3>Nexora — AI-Powered Local Merchant Network</h3>
+
+                    <a href="https://github.com/nasir6769/Nexora" target="_blank">
+                        GitHub
+                    </a>
+
+                </div>
+
+                <p class="project-tech">
+                    <strong>Tech:</strong>
+                    React.js, JavaScript, Axios, React Router, CSS
+                </p>
+
+                <ul>
+
+                    <li>
+                        Developed the frontend for a B2B merchant network
+                        connecting merchants, suppliers and platform
+                        operations.
+                    </li>
+
+                    <li>
+                        Built role-based interfaces for merchants,
+                        suppliers and administrators with protected routes.
+                    </li>
+
+                    <li>
+                        Implemented inventory management, procurement,
+                        resale and order-management interfaces.
+                    </li>
+
+                    <li>
+                        Structured the frontend for integration with a
+                        REST-based backend API.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- MYNTRA -->
+
+            <div class="project">
+
+                <div class="project-header">
+
+                    <h3>Myntra Clone</h3>
+
+                    <a href="https://github.com/nasir6769" target="_blank">
+                        GitHub
+                    </a>
+
+                </div>
+
+                <p class="project-tech">
+                    <strong>Tech:</strong>
+                    HTML, CSS, JavaScript, React.js
+                </p>
+
+                <ul>
+
+                    <li>
+                        Built a frontend e-commerce interface inspired by
+                        modern online shopping platforms.
+                    </li>
+
+                    <li>
+                        Practiced component-based UI development,
+                        responsive layouts and client-side interactions.
+                    </li>
+
+                </ul>
+
+            </div>
 
         </section>
 
 
-        <!-- ================= EXPERIENCE ================= -->
+        <!-- ================= DSA / COURSEWORK ================= -->
 
-        <section id="experience">
+        <section>
 
-            <h2>Experience</h2>
-
-            <p>
-                Currently looking for opportunities to gain professional
-                experience through internships and software development roles.
-            </p>
-
-        </section>
-
-
-        <!-- ================= CONTACT ================= -->
-
-        <section id="contact">
-
-            <h2>Contact Me</h2>
-
-            <p>
-                Interested in working together or discussing a project?
-            </p>
+            <h2>Relevant Coursework & Problem Solving</h2>
 
             <ul>
 
                 <li>
-                    <a href="mailto:nsyousuf629@gmail.com">
-                        Email
-                    </a>
+                    Data Structures & Algorithms including arrays, strings,
+                    linked lists, sorting, searching, graphs and dynamic
+                    programming.
                 </li>
 
                 <li>
-                    <a href="https://github.com/nasir6769" target="_blank">
-                        GitHub
-                    </a>
+                    Regularly practicing algorithmic problem solving using
+                    C++ and competitive programming platforms.
                 </li>
 
-
+                <li>
+                    Academic exposure to Object-Oriented Programming,
+                    Database Management Systems and Computer Networks.
+                </li>
 
             </ul>
 
         </section>
 
-    </main>
+
+        <!-- ================= ADDITIONAL ================= -->
+
+        <section class="two-column">
+
+            <div>
+
+                <h2>Interests</h2>
+
+                <ul>
+                    <li>Software Engineering</li>
+                    <li>Full-Stack Development</li>
+                    <li>Backend Systems</li>
+                    <li>AI-Powered Applications</li>
+                </ul>
+
+            </div>
 
 
-    <!-- ================= FOOTER ================= -->
+            <div>
 
-    <footer>
+                <h2>Profiles</h2>
 
-        <p>
-            © 2026 Nasir. All rights reserved.
-        </p>
+                <ul>
 
-    </footer>
+                    <li>
+                        <a href="https://github.com/nasir6769" target="_blank">
+                            GitHub
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank">
+                            LinkedIn
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank">
+                            LeetCode
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+    </div>
 
 </body>
 
