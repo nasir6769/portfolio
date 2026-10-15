@@ -1,489 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
-    <meta charset="UTF-8">
-
     <title>Time Table</title>
 
     <style>
-
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Times New Roman", serif;
             text-align: center;
-            margin: 20px;
-        }
-
-        h1 {
-            font-size: 22px;
-            margin-bottom: 5px;
         }
 
         h2 {
-            font-size: 18px;
-            margin: 5px;
+            margin-bottom: 5px;
         }
 
-        p {
-            margin: 5px;
+        h3 {
+            font-size: 28px;
+            margin: 10px;
+            color: #55552b;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 15px auto;
+            table-layout: fixed;
         }
 
-        th,
-        td {
-            border: 1px solid black;
-            padding: 7px;
+        th, td {
+            border: 1px solid gray;
+            padding: 5px 2px;
+            font-size: 12px;
             text-align: center;
-            vertical-align: middle;
-            font-size: 13px;
         }
 
         th {
-            background-color: #333333;
-            color: white;
+            background-color: #e6e6e6;
         }
-
-
-        /* ================= ROW COLOURS ================= */
-
-        .monday {
-            background-color: #ffe6e6;
-        }
-
-        .tuesday {
-            background-color: #e6f2ff;
-        }
-
-        .wednesday {
-            background-color: #e6ffe6;
-        }
-
-        .thursday {
-            background-color: #fff2cc;
-        }
-
-        .friday {
-            background-color: #f2e6ff;
-        }
-
-        .saturday {
-            background-color: #ffe6cc;
-        }
-
-
-        /* ================= LAB HOURS ================= */
-
-        .lab {
-            background-color: #ff9999 !important;
-            font-weight: bold;
-        }
-
-
-        /* ================= ELECTIVE HOURS ================= */
-
-        .elective {
-            background-color: #99ccff !important;
-            font-weight: bold;
-        }
-
-
-        /* ================= TEA BREAK ================= */
-
-        .break {
-            background-color: #d9d9d9 !important;
-            font-weight: bold;
-            writing-mode: vertical-rl;
-        }
-
-
-        /* ================= DAY ================= */
 
         .day {
-            font-weight: bold;
-            background-color: #cccccc;
-        }
-
-
-        /* ================= FOOTER ================= */
-
-        tfoot td {
-            background-color: #333333;
+            background-color: #155b7a;
             color: white;
             font-weight: bold;
+            width: 11%;
         }
 
+        .break {
+            background-color: #e6e5df;
+            font-weight: bold;
+        }
+
+        .empty {
+            background-color: white;
+        }
+
+        .name {
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
     </style>
-
 </head>
-
 
 <body>
 
-
-    <h1>BANGALORE INSTITUTE OF TECHNOLOGY</h1>
-
-    <h2>DEPARTMENT OF CSE</h2>
-
-    <h3>TIME TABLE FOR THE YEAR - SEP 2026 TO DEC 2026</h3>
-
-    <p>
-        <b>V Sem. B Section, Academic Year 2026-27 (ODD)</b>
+    <p class="name">
+        Nasir ahmad sadi<br>
+        USN - 1BI24CS138
     </p>
 
-    <p>
-        <b>W.E.F: 7/9/2026</b>
-    </p>
-
-
-    <!-- ================= TIME TABLE ================= -->
+    <h3>TIME TABLE</h3>
 
     <table>
-
-        <!-- TABLE HEADER -->
-
-        <thead>
-
-            <tr>
-
-                <th rowspan="2">DAY</th>
-
-                <th colspan="1">8:00<br>to<br>9:00</th>
-
-                <th colspan="1">9:00<br>to<br>10:00</th>
-
-                <th colspan="1">10:00<br>to<br>10:30</th>
-
-                <th colspan="1">10:30<br>to<br>11:30</th>
-
-                <th colspan="1">11:30<br>to<br>12:30</th>
-
-                <th colspan="1">12:30<br>to<br>1:30</th>
-
-                <th colspan="1">1:30<br>to<br>2:30</th>
-
-                <th colspan="1">2:30<br>to<br>3:30</th>
-
-                <th colspan="1">3:30<br>to<br>4:30</th>
-
-                <th colspan="1">4:30<br>to<br>5:30</th>
-
-            </tr>
-
-        </thead>
-
-
-        <!-- ================= TABLE BODY ================= -->
-
-        <tbody>
-
-
-            <!-- ================= MONDAY ================= -->
-
-            <tr class="monday">
-
-                <td class="day" rowspan="3">
-                    MON
-                </td>
-
-                <td>CNS</td>
-                <td>TOC</td>
-
-                <td class="break" rowspan="18">
-                    TEA<br>BREAK
-                </td>
-
-                <td class="elective">AI</td>
-                <td>SE</td>
-                <td>RM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
-
-            <tr class="monday">
-
-                <td>KNP</td>
-                <td>SHIG</td>
-
-                <td class="elective">MJ</td>
-                <td>MH</td>
-                <td>S23</td>
-
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
-
-            <tr class="monday">
-
-                <td>S23</td>
-                <td>S23</td>
-
-                <td class="elective">S23</td>
-                <td>S23</td>
-                <td>S23</td>
-
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
-
-
-            <!-- ================= TUESDAY ================= -->
-
-            <tr class="tuesday">
-
-                <td class="day" rowspan="3">
-                    TUE
-                </td>
-
-                <td></td>
-                <td></td>
-
-                <td class="elective">AI</td>
-                <td class="elective">SE</td>
-                <td class="elective">TOC</td>
-                <td class="elective">CNS</td>
-
-                <td></td>
-                <td></td>
-
-            </tr>
-
-            <tr class="tuesday">
-
-                <td></td>
-                <td></td>
-
-                <td>MJ</td>
-                <td>MH</td>
-                <td>SHIG</td>
-                <td>KNP</td>
-
-                <td></td>
-                <td></td>
-
-            </tr>
-
-            <tr class="tuesday">
-
-                <td></td>
-                <td></td>
-
-                <td>S21</td>
-                <td>S21</td>
-                <td>S21</td>
-                <td>S21</td>
-
-                <td></td>
-                <td></td>
-
-            </tr>
-
-
-            <!-- ================= WEDNESDAY ================= -->
-
-            <tr class="wednesday">
-
-                <td class="day" rowspan="3">
-                    WED
-                </td>
-
-                <td>RM</td>
-                <td>SE</td>
-
-                <td>TOC</td>
-                <td>AI</td>
-
-                <td class="lab" colspan="2">
-                    WT Lab / CNS Lab
-                </td>
-
-                <td></td>
-                <td></td>
-
-            </tr>
-
-            <tr class="wednesday">
-
-                <td>MH</td>
-                <td>MJ</td>
-
-                <td>SHIG</td>
-                <td>MJ</td>
-
-                <td class="lab" colspan="2">
-                    B1+B2
-                </td>
-
-                <td></td>
-                <td></td>
-
-            </tr>
-
-            <tr class="wednesday">
-
-                <td>S23</td>
-                <td>S23</td>
-
-                <td>S23</td>
-                <td></td>
-
-                <td class="lab" colspan="2">
-                    503 / 527A
-                </td>
-
-                <td></td>
-                <td></td>
-
-            </tr>
-
-
-            <!-- ================= THURSDAY ================= -->
-
-            <tr class="thursday">
-
-                <td class="day" rowspan="3">
-                    THU
-                </td>
-
-                <td></td>
-                <td></td>
-
-                <td>Online</td>
-                <td>EVS</td>
-                <td>KRS</td>
-
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
-
-            <tr class="thursday">
-
-                <td></td>
-                <td></td>
-
-                <td>TOC</td>
-                <td>CNS</td>
-                <td>RM</td>
-
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
-
-            <tr class="thursday">
-
-                <td></td>
-                <td></td>
-
-                <td>SHIG</td>
-                <td>KNP</td>
-                <td>SE</td>
-
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
-
-
-            <!-- ================= FRIDAY ================= -->
-
-            <tr class="friday">
-
-                <td class="day" rowspan="3">
-                    FRI
-                </td>
-
-                <td class="lab" rowspan="3">
-                    WT Lab / CNS Lab
-                </td>
-
-                <td class="lab">
-                    B3+B4
-                </td>
-
-                <td class="lab">
-                    B1+B2
-                </td>
-
-                <td>TOC</td>
-                <td>CNS</td>
-
-                <td>RM</td>
-                <td>SE</td>
-
-            </tr>
-
-            <tr class="friday">
-
-                <td class="lab">
-                    503
-                </td>
-
-                <td class="lab">
-                    527A
-                </td>
-
-                <td>SHIG</td>
-                <td>KNP</td>
-
-                <td></td>
-                <td>MH</td>
-
-            </tr>
-
-            <tr class="friday">
-
-                <td></td>
-                <td></td>
-
-                <td>527C</td>
-                <td>527C</td>
-
-                <td></td>
-                <td>527C</td>
-
-            </tr>
-
-
-            <!-- ================= SATURDAY ================= -->
-
-      
-
-        </tbody>
-
-
-        <!-- ================= TABLE FOOTER ================= -->
-
-        <tfoot>
-
-            <tr>
-
-                <td colspan="10">
-                    CLASS TIME TABLE - V SEM B SECTION
-                </td>
-
-            </tr>
-
-        </tfoot>
+        <tr>
+            <th>Day/Period</th>
+            <th>8:00-9:00</th>
+            <th>9:00-10:00</th>
+            <th>10:00-10:30</th>
+            <th>10:30-11:30</th>
+            <th>11:30-12:30</th>
+            <th>12:30-1:30</th>
+            <th>1:30-2:30</th>
+            <th>2:30-3:30</th>
+            <th>3:30-4:30</th>
+        </tr>
+
+        <!-- Monday -->
+        <tr>
+            <td class="day">Monday</td>
+
+            <td>CNS<br>KNP<br>523</td>
+            <td>TOC<br>SHG<br>523</td>
+
+            <td class="break" rowspan="6">Tea Break</td>
+
+            <td>AI<br>MJ<br>523</td>
+            <td>SE<br>MH<br>523</td>
+            <td>RM<br><br>523</td>
+
+            <td colspan="3"></td>
+        </tr>
+
+        <!-- Tuesday -->
+        <tr>
+            <td class="day">Tuesday</td>
+
+            <td colspan="2"></td>
+
+            <td colspan="2"></td>
+
+            <td>AI<br>MJ<br>521</td>
+            <td>SE<br>MH<br>521</td>
+            <td>TOC<br>SHG<br>521</td>
+            <td>CNS<br>KNP<br>521</td>
+        </tr>
+
+        <!-- Wednesday -->
+        <tr>
+            <td class="day">Wednesday</td>
+
+            <td>RM<br><br>523</td>
+            <td>SE<br>MH<br>523</td>
+
+            <td>TOC<br>SHG<br>523</td>
+            <td>AI<br>MJ<br>523</td>
+            <td></td>
+
+            <td colspan="3">
+                WT/CNS Lab<br>
+                B1+B2|B3+B4<br>
+                503_527A
+            </td>
+        </tr>
+
+        <!-- Thursday -->
+        <tr>
+            <td class="day">Thursday</td>
+
+            <td>-</td>
+            <td>-</td>
+
+            <td></td>
+            <td>
+                EVS(O)<br>
+                online<br>
+                527C
+            </td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+
+        <!-- Friday -->
+        <tr>
+            <td class="day">Friday</td>
+
+            <td colspan="2">
+                WT/CNS Lab<br>
+                B3+B4|B1+B2<br>
+                503_527A
+            </td>
+
+            <td>
+                TOC<br>
+                SHG<br>
+                527C
+            </td>
+
+            <td>
+                CNS<br>
+                527C
+            </td>
+
+            <td></td>
+
+            <td>
+                RM<br><br>527C
+            </td>
+
+            <td>
+                SE<br>
+                MH<br>
+                527C
+            </td>
+        </tr>
+
+        <!-- Saturday -->
+        <tr>
+            <td class="day">Saturday</td>
+
+            <td></td>
+            <td></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
 
     </table>
 
-
 </body>
-
 </html>
