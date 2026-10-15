@@ -1,0 +1,85 @@
+/* Element selector */
+h2 {
+    color: black;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+/* Element selector */
+h3 {
+    color: #333333;
+    text-decoration: underline;
+}
+
+/* Horizontal line */
+hr {
+    border: 1px solid gray;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Div styling */
+div {
+    background-color: #eeeeee;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px gray;
+}
+
+/* Span styling */
+span {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Time styling */
+time {
+    color: black;
+    font-weight: bold;
+}
+
+/* Image styling */
+img {
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+/* Link styling */
+a {
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* Class selector */
+.highlight {
+    background-color: yellow;
+}
+
+/* Class selector */
+.center {
+    text-align: center;
+}
+
+/* ID selector */
+#special {
+    color: darkred;
+    background-color: #eeeeee;
+    padding: 10px;
+    border-left: 5px solid darkred;
+}
+
+/* Pseudo-elements */
+h2::before {
+    content: "";
+}
+
+h3::after {
+    content: "";
+}
