@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Table</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 28px;
+            margin: 10px;
+            color: #55552b;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 5px 2px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e6e6e6;
+        }
+
+        .day {
+            background-color: #155b7a;
+            color: white;
+            font-weight: bold;
+            width: 11%;
+        }
+
+        .break {
+            background-color: #e6e5df;
+            font-weight: bold;
+        }
+
+        .empty {
+            background-color: white;
+        }
+
+        .name {
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="name">
+        Nasir ahmad sadi<br>
+        USN - 1BI24CS138
+    </p>
+
+    <h3>TIME TABLE</h3>
+
+    <table>
+        <tr>
+            <th>Day/Period</th>
+            <th>8:00-9:00</th>
+            <th>9:00-10:00</th>
+            <th>10:00-10:30</th>
+            <th>10:30-11:30</th>
+            <th>11:30-12:30</th>
+            <th>12:30-1:30</th>
+            <th>1:30-2:30</th>
+            <th>2:30-3:30</th>
+            <th>3:30-4:30</th>
+        </tr>
+
+        <!-- Monday -->
+        <tr>
+            <td class="day">Monday</td>
+
+            <td>CNS<br>KNP<br>523</td>
+            <td>TOC<br>SHG<br>523</td>
+
+            <td class="break" rowspan="6">Tea Break</td>
+
+            <td>AI<br>MJ<br>523</td>
+            <td>SE<br>MH<br>523</td>
+            <td>RM<br><br>523</td>
+
+            <td colspan="3"></td>
+        </tr>
+
+        <!-- Tuesday -->
+        <tr>
+            <td class="day">Tuesday</td>
+
+            <td colspan="2"></td>
+
+            <td colspan="2"></td>
+
+            <td>AI<br>MJ<br>521</td>
+            <td>SE<br>MH<br>521</td>
+            <td>TOC<br>SHG<br>521</td>
+            <td>CNS<br>KNP<br>521</td>
+        </tr>
+
+        <!-- Wednesday -->
+        <tr>
+            <td class="day">Wednesday</td>
+
+            <td>RM<br><br>523</td>
+            <td>SE<br>MH<br>523</td>
+
+            <td>TOC<br>SHG<br>523</td>
+            <td>AI<br>MJ<br>523</td>
+            <td></td>
+
+            <td colspan="3">
+                WT/CNS Lab<br>
+                B1+B2|B3+B4<br>
+                503_527A
+            </td>
+        </tr>
+
+        <!-- Thursday -->
+        <tr>
+            <td class="day">Thursday</td>
+
+            <td>-</td>
+            <td>-</td>
+
+            <td></td>
+            <td>
+                EVS(O)<br>
+                online<br>
+                527C
+            </td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+
+        <!-- Friday -->
+        <tr>
+            <td class="day">Friday</td>
+
+            <td colspan="2">
+                WT/CNS Lab<br>
+                B3+B4|B1+B2<br>
+                503_527A
+            </td>
+
+            <td>
+                TOC<br>
+                SHG<br>
+                527C
+            </td>
+
+            <td>
+                CNS<br>
+                527C
+            </td>
+
+            <td></td>
+
+            <td>
+                RM<br><br>527C
+            </td>
+
+            <td>
+                SE<br>
+                MH<br>
+                527C
+            </td>
+        </tr>
+
+        <!-- Saturday -->
+        <tr>
+            <td class="day">Saturday</td>
+
+            <td></td>
+            <td></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
